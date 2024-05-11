@@ -3,10 +3,10 @@ REM only show echo output, not the commands as well
 
 echo Download and install the required dependencies for the project on Windows...
 
-echo Install espeak-ng... (use Repair and Next to skip, if it is already installed)
-REM curl -L "https://github.com/espeak-ng/espeak-ng/releases/download/1.51/espeak-ng-X64.msi" --output "espeak-ng-X64.msi"
-REM espeak-ng-X64.msi
-REM del espeak-ng-X64.msi
+echo Install espeak-ng...
+curl -L "https://github.com/espeak-ng/espeak-ng/releases/download/1.51/espeak-ng-X64.msi" --output "espeak-ng-X64.msi"
+espeak-ng-X64.msi
+del espeak-ng-X64.msi
 
 REM first try a specific python version, revert to system python
 python3.12 -m venv venv
